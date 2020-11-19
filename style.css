@@ -6,12 +6,11 @@ body {
 header {
     position: fixed;
     font-family: 'Pacifico', serif;
-    background-image: url(/images/polkadots.jpg);
+    background-image: url("https://raw.githubusercontent.com/JLgrk/Donut-Shop/main/images/polkadots.jpg");
     margin: 0;
     border-bottom: #4683ab 2px solid;
     display: flex;
     width: 100%;
-    
     z-index: 2;
 }
 .logo {
@@ -81,11 +80,12 @@ img {
 .about-container {
     width: 85%;
     margin: 30px auto;
-    padding: 5px 0 0 10px;
+    padding: 5px 0 20px 10px;
     border-top: #4683ab 2px solid;
     text-align: center;
     color: #f7edbe;
     opacity:90%;
+    font-size: 1.25em;
 }
 h2 {
     font-size: 2em;
@@ -95,11 +95,7 @@ h2 {
 }
 
 /* Donuts page */
-.page-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
+
 .intro-container {
     width: 90%;
     border-bottom: #4683ab 2px solid;
@@ -108,7 +104,7 @@ h2 {
     margin: 130px auto 0 auto;
     grid-area: intro;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.25em;
 }
 
 .grid-container {
@@ -166,7 +162,6 @@ h2 {
     grid-area: topright;
     width: 300px;
     border-radius: 15px;
-    margin-bottom: 30px;
 }
 .plain {
     grid-area: topleft;
@@ -195,6 +190,7 @@ h2 {
 }
 
 /*Other Goodies Page*/
+
 .menu-container {
     display: flex;
     justify-content: center;
@@ -242,6 +238,7 @@ h2 {
 }
 
 /* Contact Page*/
+
 .contact-container {
     display: inline-flex;
     margin-top: 150px;
@@ -294,6 +291,7 @@ form button:hover {
     background-color:  #b38bb4;
     color: #f7edbe;
 }
+
 /*Footer*/
 
 footer {
@@ -306,8 +304,6 @@ footer {
 }
 .footer-main {
     padding: 10px 20px 10px 40px;
-    /*display: flex;
-    flex-wrap: wrap;*/
 }
 .footer-item {
     max-width: 130px;
@@ -359,32 +355,27 @@ footer button {
 		width: 170px;
 		border-radius: 4px;
     }
-
     nav li {
         text-align: center;
 		width: 100%;
-		padding: 20px 0;
+		padding: 10px 0;
         margin: 0;
         font-size: 1.5em;
     }
     nav:hover ul {
-
-		display: block;
-
+        display: block;
     }
-    @media only screen and (max-width : 550px) {
-        .logo {
-            font-size: 2.75em;
-            margin: 0 0 0 30px;
-            padding: 15px 0 0px 0px;
-        }
-        header {
-            width: 100%;
-        }
-        .grid-container {
-            width: 70%;
-            justify-content: center;
-            grid-template-areas:
+}
+@media only screen and (max-width : 550px) {
+    .logo {
+        font-size: 2.75em;
+        margin: 0 0 0 30px;
+        padding: 15px 0 0px 0px;
+    }
+    .grid-container {
+        width: 70%;
+        justify-content: center;
+        grid-template-areas:
                 "intro" 
                 "intro"
                 "topleft" 
@@ -393,13 +384,11 @@ footer button {
                 "midleft"
                 "midright"
                 "midmid"
-        }
-        .cappuccino-img {
-            align-self: center;
-        }
-        #footer-email {
-            margin-left: unset;
-        }
     }
-
+    .cappuccino-img {
+        align-self: center;
+    }
+    #footer-email {
+        margin-left: unset;
+    }
 }
